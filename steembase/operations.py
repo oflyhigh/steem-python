@@ -18,6 +18,8 @@ asset_precision = {
     "STEEM": 3,
     "VESTS": 6,
     "SBD": 3,
+    "HIVE": 3,  
+    "HBD": 3,  
 }
 
 
