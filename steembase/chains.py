@@ -1,6 +1,13 @@
 default_prefix = "STM"
 
 known_chains = {
+    "HIVE": {
+        "chain_id": "0" * int(256 / 4),
+        "prefix": "STM",
+        "hive_symbol": "HIVE",
+        "hbd_symbol": "HBD",
+        "vests_symbol": "VESTS",
+    },    
     "STEEM": {
         "chain_id": "0" * int(256 / 4),
         "prefix": "STM",
