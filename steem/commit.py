@@ -900,8 +900,8 @@ class Commit(object):
                 float(first(x.split(' ')))
                 for x in [reward_sbd, reward_steem, reward_vests]):
             a = Account(account)
-            reward_steem = a['reward_steem_balance']
-            reward_sbd = a['reward_sbd_balance']
+            reward_steem = a['reward_steem_balance'].split(" ")[0] + " STEEM"
+            reward_sbd = a['reward_sbd_balance'].split(" ")[0] + " SBD"
             reward_vests = a['reward_vesting_balance']
 
         op = operations.ClaimRewardBalance(
